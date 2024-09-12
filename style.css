@@ -1,0 +1,853 @@
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    /* This will keep it within the viewport */
+}
+:root{
+    --a:0;
+}
+
+.left {
+    background-color: #171717;
+    color: white;
+    /* width: 23vw; */
+    width: 32%;
+    /* height: 255vh; */
+    /* min-height: 100%; */
+    height: 90vh;
+}
+
+.right {
+    
+
+
+
+    position: relative;
+    width: 72vw;
+    height: 90vh;
+    background-color: #1d1d1d;
+
+}
+
+
+.cont2>button {
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+
+    border-radius: 85px;
+}
+
+.bucket {
+    margin-left: 171px;
+}
+
+.searchbar {
+    white-space: nowrap;
+    box-sizing: content-box;
+    margin-left: 31px;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 9px;
+    width: 437px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* padding: 5px;*/
+    background-color: #1f1f1f;
+    cursor: pointer;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.searchbar>img {
+    display: inline-block;
+}
+
+.searchbar>span {
+    font-size: 16px;
+}
+
+.container1 {
+    border: none;
+}
+
+.cont2 {
+    display: flex;
+    margin-left: 305px;
+}
+
+.cont2>button {
+    margin-right: -14px;
+    background-color: #1f1f1f;
+    border: none;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    border-radius: 85px;
+    margin-left: 41px;
+}
+
+.home {
+    margin-left: 2px;
+}
+
+.cont2>button>img {
+    /* fill: currentcolor; */
+    width: var(--encore-graphic-size-decorative-base, 24px);
+    height: var(--encore-graphic-size-decorative-base, 24px);
+    margin-inline-start: 8px;
+
+
+    display: flex;
+
+}
+
+.buttons2 {
+    gap: 31px;
+    display: flex;
+    margin-left: 215px;
+}
+
+.signin {
+    font-weight: 700;
+    background: none;
+    border: none;
+    width: 66px;
+    margin-left: -104px;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    color:
+        rgb(179, 179, 179);
+    font-size: 16;
+    cursor: pointer;
+}
+
+.signin:hover {
+    color: white;
+    /* Turn text white on hover */
+    transform: scale(1.1);
+}
+
+.login {
+    margin-left: -24px;
+    margin-right: 21px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid black;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-size: 16;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login:hover {
+    transform: scale(1.1);
+}
+
+.firstrow {
+    margin-left: 13px;
+    margin-top: 8px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.footer {
+    /* display: flex;
+  
+    font-size: 11px;
+    gap:13px;
+    position: relative;
+    bottom: 0; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns */
+    grid-template-rows: repeat(3, auto);
+    /* Three rows */
+    font-size: 11px;
+    gap: 10px 20px;
+    /* Gap between rows and columns */
+    position: relative;
+    bottom: 0;
+    margin-top: 23px;
+    margin-left: 23px;
+}
+
+.footer a {
+    color: gray;
+    position: relative;
+    bottom: 0;
+    text-decoration: none;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+.plus {
+    margin-left: 204px;
+}
+
+.container1 {
+    background-color: #1f1f1f;
+    margin-right: 23px;
+    margin-left: 9px;
+    width: 275px;
+    /* border: 2px solid black; */
+    height: 142px;
+    margin-top: 41px;
+    border-radius: 10px;
+
+}
+
+.container1 ul li {
+    list-style: none;
+    display: flex;
+
+    margin-left: -11px;
+    margin-bottom: 6px;
+    padding-top: 10px;
+}
+
+.container1 ul {
+    margin-top: 10px;
+    /* Adds space above the entire list */
+}
+
+.oneli {
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.container1>button {
+    font-weight: bold;
+    margin-left: 23px;
+    width: 135px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 23px;
+}
+
+.container2 {
+    background-color: #1f1f1f;
+    margin-right: 23px;
+    margin-left: 9px;
+    width: 275px;
+    border: none;
+    height: auto;
+    margin-top: 24px;
+    border-radius: 10px;
+    padding-top: 10px;
+
+
+
+}
+
+.container2 ul li {
+    padding-top: 10px;
+    list-style: none;
+    margin-left: -8px;
+}
+
+.container2 ul {
+    margin-top: 10px;
+
+}
+
+.container2>button {
+    font-weight: bold;
+    margin-left: 23px;
+    width: 150px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 23px;
+    margin-bottom: 23px;
+
+}
+
+.container3 ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container3>ul {
+    list-style: none;
+}
+
+.english button {
+    display: flex;
+    align-items: center;
+    /* Aligns items vertically */
+    justify-content: center;
+    /* Centers the content horizontally */
+    border: 2px solid white;
+    font-weight: bold;
+    width: 105px;
+    padding: 5px;
+    border-radius: 23px;
+    margin-top: 40px;
+    margin-left: 26px;
+    background-color: black;
+    color: white;
+    gap: 8px;
+}
+
+.row1 {
+    display: flex;
+    gap: 664px;
+}
+
+.h {
+    font-size: 24px;
+    font-family: SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic"
+    ;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    margin-left: 21px;
+    font-weight: 700;
+
+}
+
+.row1 a {
+    margin-left: -113px;
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    font-weight: 500;
+    margin-top: 34px;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-weight: 700;
+
+}
+
+
+.cardcontainer {
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Adjust gap as needed */
+    /* overflow-y: scroll; Allow vertical scroll */
+
+    
+
+
+    margin: 16px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 60vh;
+}
+
+.card {
+    margin-top: -10px;
+    overflow: hidden;
+    position: relative;
+    margin-right: -3px;
+    margin-left: -2px;
+    height: 240px;
+    width: 194px;
+    padding: 0;
+    width: 19%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card>img {
+
+
+    height: 150px;
+
+    border-radius: 50%;
+
+    padding: 10px;
+
+    object-fit: cover;
+}
+
+.card>span {
+    margin-top: -34px;
+    margin-left: -83px;
+    padding-left: 19px;
+    padding-top: 32px;
+    font-size: 16;
+    font-weight: 400;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+
+}
+
+
+.p {
+    margin-top: -41px;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.m {
+    margin-top: -29px;
+    padding-top: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.card:hover {
+    background-color: #2a2a2a;
+    padding-left: 5px;
+    /* Add padding on hover to ensure even spacing */
+    padding-right: 5px;
+    border-radius: 5px;
+    --a:1
+
+}
+
+
+.circular-button {
+    position: absolute;
+    bottom: -50px;
+    /* Position it below the card initially */
+    right: 24px;
+    background-color: #4bd44b;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    opacity: var(--a);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    z-index: 10;
+    /* Ensure it's on top */
+}
+
+.card:hover .circular-button {
+    bottom: 70px;
+    /* Move into view */
+    opacity: 1;
+}
+
+.songinfo {
+    margin-bottom: -1px;
+}
+
+.playbar {
+    /* height: 64px; */
+    height: 76px;
+    padding: 9px;
+    position: fixed;
+    bottom: 10px;
+    width: 65.5vw;
+    background: #dad5d5;
+    z-index: 10;
+    filter: invert(1);
+
+    border-radius: 10px;
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.songlist ul {
+    padding: 6px 12px;
+    margin-left: 4px;
+}
+
+.songlist ul li {
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    padding: 12px 13px;
+    cursor: pointer;
+    gap: 24px;
+    font-size: 12px;
+    display: flex;
+    margin: 12px 0px;
+    border: 1px solid white;
+    list-style-type: decimal;
+    border-radius: 5px;
+}
+
+.playnow {
+    width: 131px;
+    /* font-size: 15px; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+
+}
+
+.playnow span {
+    width: 100px;
+    font-size: 15px;
+    padding: 12px;
+
+}
+
+.music {
+    margin-left: 2px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.song-name,
+.song-artist {
+    margin-left: -11px;
+    margin-right: -33px;
+    margin-bottom: 2px;
+    margin-top: -1px;
+    display: block;
+}
+
+.pl {
+    margin-left: -21px;
+}
+
+.songlist .info {
+    font-size: 11px;
+    width: 344px;
+}
+
+.songlist {
+    height: 444px;
+    overflow: scroll;
+}
+
+.seekbar {
+    height: 3px;
+    width: 98%;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    top: -6px;
+    bottom: 11px;
+    left: -1%;
+    transition: left 0.5s;
+}
+
+.songbuttons img {
+    cursor: pointer;
+}
+
+.songinfo,
+.songtime {
+    color: black;
+    padding: 0 12px;
+}
+
+.songinfo {
+    width: 265px;
+    /* border: 1px solid red; */
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+.timevol {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+
+
+.volume>img{
+    cursor: pointer;
+}
+.volume
+{
+    cursor: pointer;
+}
+.volume:hover {
+    opacity: 0.8;           /* Slightly change opacity on hover for visual feedback */
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    /* Center the buttons horizontally */
+    align-items: center;
+    /* Center the buttons vertically */
+    width: 86%;
+    /* Ensure it takes up the full width of the container */
+    position: absolute;
+    /* Keep it fixed relative to its parent */
+    top: 45%;
+    /* Adjust to stay in the middle vertically */
+    transform: translateY(-50%);
+    /* Fine-tune vertical centering */
+}
+
+.hamburger {
+    display: none;
+}
+
+.next,
+.previous {
+    cursor: pointer;
+}
+
+.songtime {
+    /* margin-top: -19px;
+    width: 203px;
+    border: 2px solid yellow;
+    margin-bottom: 151px;
+    margin-left: 495px;
+    margin-right: -10px;
+    padding: 0px; */
+
+
+
+    margin-top: 0; /* Adjust as needed */
+    width: 203px;
+    /* border: 2px solid yellow; */
+    margin-bottom: 0; /* Adjust or remove if causing layout issues */
+    margin-left: 0; /* Adjust as needed */
+    margin-right: -55px; /* Adjust as needed */
+    padding: 0;
+}
+.volbar>img{
+    margin-left: -16px;
+    cursor: pointer;
+}
+
+.volume {
+    margin-top: -29px;
+    margin-bottom: -17px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 159px;
+    cursor: pointer;
+}
+
+
+.range input{
+    cursor: pointer;
+}
+.timevol {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+}
+
+ .volume-slider { 
+    width: 150px; 
+    height: 6px;
+    background: #ddd;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+
+ .volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: green;
+    cursor: pointer;
+} 
+.volume-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: green;
+    cursor: pointer;
+} 
+
+
+.volume img {
+    width: 24px;
+   
+    height: auto;
+    
+}
+
+.lastend {
+  
+    padding: 0 0px;
+    display: flex;
+    align-items: center;
+}
+.volbar{
+    /* align-items: center;
+    gap: 12px;
+    margin-top: -33px;
+    /* border: 2px solid palevioletred; 
+    display: flex;
+    /* margin-bottom: 65px; 
+    margin-right: 33px;
+    color: #b19f9f;
+    margin-left: -139px;
+    width: 144px; */
+
+
+    align-items: center;
+    gap: 12px;
+    display: flex;
+    margin: 0; /* Remove margins affecting positioning */
+    color: #b19f9f;
+    width: 164px; 
+}
+.range>img{
+
+}
+
+.volume-slider {
+    width: 139px;
+    height: 6px;
+    background: #ddd;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    /* Add the following properties to style the input element */
+    /* appearance: none;
+    -webkit-appearance: none; */
+}
+
+@media (max-width:430px) {
+    .cardcontainer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-flow: column;
+        height: 850px;
+        width: 344px;
+    }
+
+    .searchbar {
+        text-align: center;
+        height: 12px;
+        padding: -26px;
+        font-size: -361px;
+        margin-bottom: 16px;
+        padding-bottom: -61px;
+        width: 274px;
+        margin-left: -375px;
+
+    }
+
+    .searchbar>span {
+        margin-bottom: -15px;
+        margin-right: -67px;
+        height: 26px;
+        width: -63px;
+        font-size: 9px;
+        white-space: nowrap;
+    }
+
+    .left {
+        position: absolute;
+        left: -130%;
+        transition: all .3s;
+        z-index: 1;
+        width: 373px;
+        background-color: black;
+        padding: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+
+    .cont1>img {
+        margin-top: -15px;
+    }
+
+    .right {
+        width: 95vw;
+        height: 177vh;
+
+    }
+
+    .h {
+        white-space: nowrap;
+    }
+
+    .card {
+        width: 207px;
+        height: 421px;
+        margin-bottom: -38px;
+        width: 90%;
+        /* Adjust width to fit the container */
+        height: 206px;
+        /* Let the height adjust based on content */
+        margin-bottom: 2px;
+        /* Space between cards */
+        background-color: #3b3939;
+        /* Ensure background is visible */
+        /* border: 2px solid red;  */
+        padding-top: 57px;
+    }
+
+    .artist {
+        align-items: center;
+        justify-content: center;
+        width: 354px;
+        height: 360px;
+        margin-top: 33px;
+        width: 100%;
+        /* Ensure it takes full width of the container */
+        height: auto;
+        /* Adjust height automatically */
+        margin-top: 33px;
+        /* Space above the artist section */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
